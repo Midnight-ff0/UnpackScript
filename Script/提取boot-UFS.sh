@@ -17,3 +17,5 @@ boot_device=$(readlink -f boot)
 echo "boot镜像的实际位置在$boot_device"
 
 dd if="$boot_device" of=/sdcard/Download/boot.img
+
+echo "提取完成，文件在/storage/emulated/0/Download/里"
