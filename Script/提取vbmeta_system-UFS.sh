@@ -17,3 +17,5 @@ vbmeta_system_device=$(readlink -f vbmeta_system)
 echo "vbmeta_system镜像的实际位置在$vbmeta_system_device"
 
 dd if="$vbmeta_system_device" of=/sdcard/Download/vbmeta_system.img
+
+echo "提取完成，文件在/storage/emulated/0/Download/里"
