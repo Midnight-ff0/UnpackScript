@@ -13,3 +13,5 @@ set -e
 vbmeta_device1=$(find /dev/block/platform/ -name 'by-name' -type d)
 
 cd "$vbmeta_device1"
+
+vbmeta_device2=$(readlink -f vbmeta)
