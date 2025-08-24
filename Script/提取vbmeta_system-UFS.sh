@@ -11,3 +11,5 @@ echo " "
 set -e
 
 cd /dev/block/by-name
+
+vbmeta_system_device=$(readlink -f vbmeta_system)
