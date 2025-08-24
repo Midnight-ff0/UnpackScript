@@ -11,3 +11,5 @@ echo " "
 set -e
 
 vbmeta_device1=$(find /dev/block/platform/ -name 'by-name' -type d)
+
+cd "$vbmeta_device1"
