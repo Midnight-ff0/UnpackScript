@@ -13,3 +13,5 @@ set -e
 boot_device1=$(find /dev/block/platform/ -name 'by-name' -type d)
 
 cd "$boot_device1"
+
+boot_device2=$(readlink -f boot)
