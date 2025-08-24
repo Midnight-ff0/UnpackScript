@@ -17,3 +17,5 @@ cd "$boot_device1"
 boot_device2=$(readlink -f boot)
 
 echo "boot镜像的实际位置在$boot_device2"
+
+dd if="$boot_device2" of=/sdcard/Download/boot.img
