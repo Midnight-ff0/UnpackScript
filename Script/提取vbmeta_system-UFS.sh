@@ -15,3 +15,5 @@ cd /dev/block/by-name
 vbmeta_system_device=$(readlink -f vbmeta_system)
 
 echo "vbmeta_system镜像的实际位置在$vbmeta_system_device"
+
+dd if="$vbmeta_system_device" of=/sdcard/Download/vbmeta_system.img
