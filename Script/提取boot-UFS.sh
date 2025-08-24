@@ -11,3 +11,5 @@ echo " "
 set -e
 
 cd /dev/block/by-name
+
+boot_device=$(readlink -f boot)
