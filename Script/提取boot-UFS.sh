@@ -13,3 +13,5 @@ set -e
 cd /dev/block/by-name
 
 boot_device=$(readlink -f boot)
+
+echo "boot镜像的实际位置在$boot_device"
