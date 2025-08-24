@@ -13,3 +13,5 @@ set -e
 cd /dev/block/by-name
 
 vbmeta_system_device=$(readlink -f vbmeta_system)
+
+echo "vbmeta_system镜像的实际位置在$vbmeta_system_device"
