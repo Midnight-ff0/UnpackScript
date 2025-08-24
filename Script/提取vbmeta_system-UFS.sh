@@ -9,3 +9,5 @@ echo "适用于不支持动态系统更新的设备"
 echo " "
 
 set -e
+
+cd /dev/block/by-name
